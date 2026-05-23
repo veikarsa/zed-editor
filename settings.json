@@ -1,0 +1,60 @@
+{
+  // --- UI & Theming ---
+  "theme": "Min Dark (Blurred)",
+  "theme_overrides": {
+    "Min Dark (Blurred)": {
+      "players": [
+        {
+          "cursor": "#fff"
+        }
+      ]
+    }
+  },
+  "icon_theme": "Material Icon Theme",
+  "ui_font_family": "GeistMono Nerd Font",
+  "ui_font_size": 18,
+  "title_bar": {
+    "show_sign_in": false
+  },
+
+  // --- Editor & Formatting ---
+  "buffer_font_family": "GeistMono Nerd Font",
+  "buffer_font_size": 18,
+  "tab_size": 2,
+  "show_whitespaces": "none",
+  "show_completion_documentation": false,
+  "formatter": "prettier",
+  "format_on_save": "on",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+
+  // --- Cursor & Input ---
+  "cursor_shape": "block",
+  "cursor_blink": true,
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "vim_mode": false,
+
+  // --- Panels & Terminal ---
+  "project_panel": {
+    "default_width": 300,
+    "scrollbar": {
+      "show": "never"
+    }
+  },
+  "terminal": {
+    "shell": {
+      "program": "powershell.exe -NoLogo"
+    },
+    "font_family": "Geist Mono",
+    "font_size": 16
+  },
+
+  // --- Telemetry & System ---
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}
