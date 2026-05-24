@@ -1,60 +1,75 @@
 {
-  // --- UI & Theming ---
-  "theme": "Min Dark (Blurred)",
-  "theme_overrides": {
-    "Min Dark (Blurred)": {
-      "players": [
-        {
-          "cursor": "#fff"
-        }
-      ]
-    }
-  },
-  "icon_theme": "Material Icon Theme",
-  "ui_font_family": "GeistMono Nerd Font",
-  "ui_font_size": 18,
-  "title_bar": {
-    "show_sign_in": false
-  },
-
-  // --- Editor & Formatting ---
-  "buffer_font_family": "GeistMono Nerd Font",
-  "buffer_font_size": 18,
-  "tab_size": 2,
-  "show_whitespaces": "none",
-  "show_completion_documentation": false,
-  "formatter": "prettier",
-  "format_on_save": "on",
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 1000
-    }
-  },
-
-  // --- Cursor & Input ---
-  "cursor_shape": "block",
-  "cursor_blink": true,
-  "multi_cursor_modifier": "cmd_or_ctrl",
-  "vim_mode": false,
-
-  // --- Panels & Terminal ---
-  "project_panel": {
-    "default_width": 300,
-    "scrollbar": {
-      "show": "never"
-    }
-  },
-  "terminal": {
-    "shell": {
-      "program": "powershell.exe -NoLogo"
-    },
-    "font_family": "Geist Mono",
-    "font_size": 16
-  },
-
-  // --- Telemetry & System ---
+  // Telemetry
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
-  }
+    "metrics": false,
+  },
+
+  // Session
+  "session": {
+    "trust_all_worktrees": true,
+  },
+
+  // Theme
+  "theme": "Min Dark (Solid)",
+  "icon_theme": "Zed (Default)",
+
+  // Fonts
+  "ui_font_family": "GeistMono Nerd Font",
+  "ui_font_size": 18,
+  "buffer_font_family": "GeistMono Nerd Font",
+  "buffer_font_size": 18,
+
+  // Editor
+  "tab_size": 2,
+  "formatter": "prettier",
+  "relative_line_numbers": "enabled",
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "snippet_sort_order": "top",
+  "autosave": {
+    "after_delay": { "milliseconds": 1000 },
+  },
+  "show_whitespaces": "none",
+  "selection_highlight": false,
+  "hover_popover_enabled": false,
+  "show_completion_documentation": false,
+  "disable_ai": true,
+
+  // Diagnostics
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+    },
+  },
+
+  // UI Panels
+  "tab_bar": {
+    "show": false,
+  },
+  "gutter": {
+    "folds": false,
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_menu": false,
+  },
+  "project_panel": {
+    "dock": "right",
+    "default_width": 320,
+  },
+  "git_panel": {
+    "dock": "left",
+    "sort_by_path": true,
+    "tree_view": true,
+  },
+
+  // Terminal
+  "terminal": {
+    "shell": {
+      "program": "powershell.exe -NoLogo",
+    },
+    "font_family": "GeistMono Nerd Font",
+    "font_size": 16,
+  },
 }
